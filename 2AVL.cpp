@@ -1,11 +1,3 @@
-/*Implement a multiplayer game system that uses an AVL tree data structure to organize and
-manage player data efficiently. The multiplayer game supports multiple players participating
-simultaneously, and the AVL tree is used to store player information such as player_id and
-scores (key, value pair). The system should provide following operation:
-1. Player Registration
-2. Leaderboard Display
-3. Remove player from game*/
-
 #include <iostream>
 #include <string>
 using namespace std;

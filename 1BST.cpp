@@ -1,15 +1,3 @@
-/*Consider the Dictionary Implementations which allow for efficient storage and retrieval of
-key-value pairs using binary search trees. Each node in the tree store (key, value) pair. The
-dictionary should support the following operations efficiently:
-1. Insert word (Handle insertion of duplicate entry)
-2. Delete word
-3. Search specific word
-4. Display dictionary (Traversal)
-5. Mirror image of dictionary
-6. Create a copy of dictionary
-7. Display dictionary level wise*/
-
-
 #include<iostream>
 #include<string>
 #include<queue>
