@@ -37,7 +37,7 @@ class Graph{
             int node = queue[front++];
             cout << node << " ";
             for(int i = 0; i < V; i++){
-                if(adj[node][i]==1 && visited[i] == 0){
+                if(adj[node][i] == 1 && visited[i] == 0){
                     visited[i] = 1;
                     queue[rear++] = i;
                 }
