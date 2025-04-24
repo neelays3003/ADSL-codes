@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-#define MAX_NODES 100 // Maximum number of nodes
+#define MAX_NODES 100 
 
 class Graph {
-    int adj[MAX_NODES][MAX_NODES]; // Adjacency matrix
-    int V; // Number of vertices
+    int adj[MAX_NODES][MAX_NODES]; 
+    int V; 
 public:
     Graph(int vertices) {
         V = vertices;
         for (int i = 0; i < V; i++)
             for (int j = 0; j < V; j++)
-                adj[i][j] = 0; // Initialize adjacency matrix with 0
+                adj[i][j] = 0; 
     }
 
     void addEdge(int u, int v) {
@@ -20,7 +20,7 @@ public:
             return;
         }
         adj[u][v] = 1;
-        adj[v][u] = 1; // Remove this line for a directed graph
+        adj[v][u] = 1; 
     }
 
     void DFS(int start){
@@ -42,7 +42,7 @@ public:
                 cout<< node << " ";
             }
 
-            for(int i =0; i< V; i++){
+            for(int i = 0; i< V; i++){
                 if(adj[node][i] == 1 && visited[i] == 0){
                     stack[++top] = i;
                 }
