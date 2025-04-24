@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int MAX = 100;
+#define MAX 100
 
 struct Edge {
     int u, v, weight;
@@ -11,7 +11,7 @@ string dept[MAX];
 Edge edges[MAX];
 int parent[MAX];
 
-// Find the root of a node with path compression
+// Find the root of a node 
 int find(int i) {
     if (parent[i] != i)
         parent[i] = find(parent[i]);

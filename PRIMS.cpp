@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-const int s = 100;
-const int inf = 99999;
+#define s 100
+#define inf 99999
 
 int graph[s][s];
 string department[s];
